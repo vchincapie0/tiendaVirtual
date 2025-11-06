@@ -5,9 +5,10 @@ import android.graphics.Paint
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.tiendavirtualapp.Adaptadores.AdaptadorImgSlider
+import com.example.tiendavirtualapp.Modelos.ModeloImgSlider
 import com.example.tiendavirtualapp.Modelos.ModeloProducto
 import com.example.tiendavirtualapp.databinding.ActivityDetalleProductoBinding
-
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -139,7 +140,8 @@ class DetalleProductoActivity : AppCompatActivity() {
 
                         }
                     }
-                    val adaptadorImgSlider = AdaptadorImgSlider(this@DetalleProductoActivity, imagenSlider)
+                    val adaptadorImgSlider =
+                        AdaptadorImgSlider(this@DetalleProductoActivity, imagenSlider)
                     binding.imagenVP.adapter = adaptadorImgSlider
                 }
 
