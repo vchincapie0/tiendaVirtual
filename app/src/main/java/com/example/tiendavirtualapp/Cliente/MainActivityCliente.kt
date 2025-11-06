@@ -88,12 +88,6 @@ class MainActivityCliente : AppCompatActivity() , NavigationView.OnNavigationIte
             R.id.op_cerrar_sesion_c->{
                 cerrarSesion()
             }
-            R.id.op_tienda_c->{
-                replaceFragment(FragmentTiendaCliente())
-            }
-            R.id.op_mis_ordenes_c->{
-                replaceFragment(FragmentMisOrdenesC())
-            }
 
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)
