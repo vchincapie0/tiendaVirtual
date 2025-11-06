@@ -26,7 +26,7 @@
             <ImageButton
                 android:id="@+id/Ib_fav"
                 android:layout_alignParentEnd="true"
-                android:src="@drawable/ic_no_favorito"
+                android:src="@drawable/ico_no_favorito"
                 android:background="@android:color/transparent"
                 android:padding="7dp" android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
