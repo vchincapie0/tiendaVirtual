@@ -54,6 +54,7 @@ dependencies {
     implementation(libs.imagePicker)
     implementation(libs.glide)
     implementation(libs.storage)
+    implementation(libs.photoView)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

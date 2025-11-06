@@ -16,6 +16,7 @@ firebaseDatabaseV="22.0.1"
 imagePickerV="2.1"
 glideV="5.0.5"
 storageV="22.0.1"
+photoViewV = "2.3.0"
 
 
 [libraries]
@@ -33,6 +34,7 @@ firebaseDatabase={group="com.google.firebase", name = "firebase-database", versi
 imagePicker={group="com.github.dhaval2404", name = "imagepicker", version.ref="imagePickerV"}
 glide={group="com.github.bumptech.glide", name = "glide", version.ref="glideV"}
 storage={group="com.google.firebase", name = "firebase-storage", version.ref="storageV"}
+photoView={group="com.github.chrisbanes", name = "PhotoView", version.ref="photoViewV"}
 
 
 [plugins]
