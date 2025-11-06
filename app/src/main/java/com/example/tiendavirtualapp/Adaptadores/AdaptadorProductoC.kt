@@ -17,6 +17,7 @@ import com.bumptech.glide.Glide
 import com.example.tiendavirtualapp.Modelos.ModeloProducto
 import com.example.tiendavirtualapp.databinding.ItemProductoCBinding
 import com.example.tiendavirtualapp.Constantes
+import com.example.tiendavirtualapp.DetalleProducto.DetalleProductoActivity
 //import com.example.tiendavirtualapp.DetalleProducto.DetalleProductoActivity
 import com.example.tiendavirtualapp.Filtro.FiltroProducto
 import com.example.tiendavirtualapp.R
@@ -78,7 +79,7 @@ class AdaptadorProductoC : RecyclerView.Adapter<AdaptadorProductoC.HolderProduct
             }
         }
 
-        //Evento para dirigirnos a la actividad de detalla
+        //Evento para dirigirnos a la actividad de detalle
         holder.itemView.setOnClickListener {
             val intent = Intent(mContext, DetalleProductoActivity::class.java)
             intent.putExtra("idProducto", modeloProducto.id)
