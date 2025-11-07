@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.example.tiendavirtualapp.Cliente.Bottom_Nav_Fragments_Cliente.FragmentFavoritosC
 import com.example.tiendavirtualapp.Cliente.Bottom_Nav_Fragments_Cliente.FragmentTiendaCliente
 import com.example.tiendavirtualapp.Cliente.Bottom_Nav_Fragments_Cliente.FragmentMisOrdenesC
-//import com.example.tiendavirtualapp.Cliente.Bottom_Nav_Fragments_Cliente.FragmentCarritoC
+import com.example.tiendavirtualapp.Cliente.Bottom_Nav_Fragments_Cliente.FragmentCarritoC
 import com.example.tiendavirtualapp.R
 import com.example.tiendavirtualapp.databinding.FragmentInicioCBinding
 
@@ -29,9 +29,9 @@ class FragmentInicioC : Fragment() {
                 R.id.op_favoritos_c->{
                     replaceFragment(FragmentFavoritosC())
                 }
-                //R.id.op_carrito_c->{
-                    //replaceFragment(FragmentCarritoC())
-                //}
+                R.id.op_carrito_c->{
+                    replaceFragment(FragmentCarritoC())
+                }
                 R.id.op_mis_ordenes_c->{
                     replaceFragment(FragmentMisOrdenesC())
                 }

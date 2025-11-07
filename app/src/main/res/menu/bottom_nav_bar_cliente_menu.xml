@@ -9,10 +9,10 @@
         android:title="@string/op_favoritos_c"
         android:icon="@drawable/ico_favoritos"/>
 
-    <!--<item
+    <item
         android:id="@+id/op_carrito_c"
         android:title="@string/op_carrito_c"
-        android:icon="@drawable/ico_carrito_compras"/>-->
+        android:icon="@drawable/ico_carrito_compras"/>
 
     <item android:id="@+id/op_mis_ordenes_c"
         android:title="@string/op_mis_ordenes_c"

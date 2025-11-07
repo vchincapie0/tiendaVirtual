@@ -28,7 +28,6 @@
     <string name="op_mis_ordenes_c">Mis órdenes</string>
     <string name="txt_bienvenida">Bienvenido(a)</string>
 
-
     <!-- Registro de vendedor -->
     <string name="txtRegistroV">Registro de vendedor</string>
     <string name="etNombresV">Nombres completos</string>
@@ -54,6 +53,19 @@
     <string name="btnLoginC">Ingresar</string>
     <string name="tvRegistrarC">Registrarme</string>
     <string name="tvRecuperarPass">Recuperar contraseña</string>
+
+    <!-- Olvidé mi contraseña -->
+    <string name="txtRecuperarPass">Recuperar contraseña</string>
+    <string name="txtInstrucciones">Ingrese su correo electrónico para enviarle las instrucciones de recuperación.</string>
+    <string name="btnEnviarInstrucciones">Enviar</string>
+
+    <!-- Actualizar contraseña -->
+    <string name="txtActualizarPass">Actualizar contraseña</string>
+    <string name="txtInstruccionesP">Su nueva contraseña debe ser diferente a la actual.</string>
+    <string name="etPasswordActual">Contraseña actual</string>
+    <string name="etPasswordNueva">Contraseña nueva</string>
+    <string name="etPasswordNuevaR">Repita nueva contraseña</string>
+    <string name="btnActualizarPassword">Actualizar</string>
 
     <!-- Productos -->
     <string name="txtAgregarProductos">Agregar productos</string>
@@ -103,6 +115,7 @@
     <string name="precioDescPD">00</string>
     <string name="notaDescPD">50% OFF</string>
     <string name="imagenContadorTv">1/5</string>
+
     <!-- Carrito de compras -->
     <string name="nombrePCar">Nombre del producto</string>
     <string name="descripcionPCar">Descripción</string>
@@ -112,6 +125,7 @@
     <string name="cantidadPCar">1</string>
     <string name="precioFinalPCar">00</string>
     <string name="btnAgregarCarrito">Agregar al carrito</string>
+
     <!-- Zoom a la imagen -->
     <string name="cerrarZoom">Cerrar</string>
     <string name="sumaProductos">Suma productos</string>
@@ -119,11 +133,29 @@
     <string name="direccionTXT">Mi direccion</string>
     <string name="txtCategorias">Nuestras categorias</string>
 
+    <!-- Perfil del cliente -->
+    <string name="txtMiPerfil">Mi perfil</string>
+    <string name="nombresCPerfil">Nombres completos</string>
+    <string name="emailCPerfil">Email</string>
+    <string name="dniCPerfil">Dni</string>
+    <string name="telefonoCPerfil">Teléfono</string>
+    <string name="ubicacion">Ubicación</string>
+    <string name="fechaRegistroCPerfil">Fecha de registro</string>
+    <string name="proveedorCPerfil">Proveedor</string>
+    <string name="btnGuardarInfoC">Guardar</string>
+    <string name="btnActualizarContraseña">Cambiar contraseña</string>
+
+    <!-- Mapas -->
+    <string name="txtSeleccionarUbicacion">Seleccione una ubicación</string>
+    <string name="Btn_listo">Confirmar</string>
+    <string name="btnCrearOrden">Confirmar orden</string>
+
     <!-- Orden de la compra -->
     <string name="idOrdenItem">Id de la orden</string>
     <string name="fechaOrdenItem">00/00/0000</string>
     <string name="estadoOrdenItem">Estado</string>
     <string name="costoOrdenItem">00</string>
+
     <!-- Detalle de la orden -->
     <string name="tvidOrdenD">Id de la orden: </string>
     <string name="idOrdenD"> -- </string>
@@ -163,6 +195,28 @@
     <string name="btnActualizarNomCat">Actualizar</string>
     <string name="btnAnterior">Anterior</string>
     <string name="btnSiguiente">Siguiente</string>
+
+    <!-- Calificación de un producto -->
+    <string name="txtCalificacion">Calificar producto</string>
+    <string name="txtcalificar">¿Cómo calificarías este producto?</string>
+    <string name="tvNombreP">Funko Pop Spider-Man</string>
+    <string name="txtopinion">¿Qué te gustaría decir acerca de este producto?</string>
+    <string name="etOpinion">Comparte tu experiencia</string>
+    <string name="tvNombreUsuarioCal">Nombre de usuario</string>
+    <string name="tvReseniaCal">Reseña</string>
+    <string name="txtMostrarCal">Calificaciones</string>
+    <string name="txtEstados">Estados de órdenes</string>
+    <string name="tvEstado1">Solicitud recibida</string>
+    <string name="tvEstado2">Pago pendiente</string>
+    <string name="tvEstado3">En preparación</string>
+    <string name="tvEstado4">Entregado</string>
+    <string name="tvEstado5">Cancelado</string>
+    <string name="txtGanancias">Ganancias</string>
+    <string name="tvGanancias">0 USD</string>
+    <string name="txtPerdidas">Pérdidas</string>
+    <string name="tvPerdidas">0 USD</string>
+    <string name="btnVerClientes">Mis clientes</string>
+    <string name="txtListaClientes">Lista de clientes</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
