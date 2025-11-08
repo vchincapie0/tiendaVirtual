@@ -55,6 +55,7 @@ dependencies {
     implementation(libs.glide)
     implementation(libs.storage)
     implementation(libs.photoView)
+    implementation(libs.circleImage)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
