@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.tiendavirtualapp.R
 import com.example.tiendavirtualapp.Adaptadores.AdaptadorCategoriaC
+import com.example.tiendavirtualapp.Adaptadores.AdaptadorProductoAleatorio
 //import com.example.tiendavirtualapp.Adaptadores.AdaptadorProductoAleatorio
 import com.example.tiendavirtualapp.Modelos.ModeloCategoria
 import com.example.tiendavirtualapp.Modelos.ModeloProducto
@@ -29,7 +30,7 @@ class FragmentTiendaCliente : Fragment() {
     private lateinit var adaptadorCategoria : AdaptadorCategoriaC
 
     private lateinit var productosArrayList : ArrayList<ModeloProducto>
-    //private lateinit var adaptadorProducto : AdaptadorProductoAleatorio
+    private lateinit var adaptadorProducto : AdaptadorProductoAleatorio
 
     override fun onAttach(context: Context) {
         mContext = context
@@ -57,8 +58,8 @@ class FragmentTiendaCliente : Fragment() {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     val nombres = "${snapshot.child("nombres").value}"
                     val direccion = "${snapshot.child("direccion").value}"
-                    //binding.bienvenidaTXT.setText("Bienvenido(a): ${nombres}")
-                    //binding.direccionTXT.setText("${direccion}")
+                    binding.bienvenidaTXT.setText("Bienvenido(a): ${nombres}")
+                    binding.direccionTXT.setText("${direccion}")
                 }
 
                 override fun onCancelled(error: DatabaseError) {
@@ -81,8 +82,8 @@ class FragmentTiendaCliente : Fragment() {
 
                 val listaAleatoria = productosArrayList.shuffled().take(10)
 
-                //adaptadorProducto = AdaptadorProductoAleatorio(mContext, listaAleatoria)
-                //binding.productosAleatRV.adapter = adaptadorProducto
+                adaptadorProducto = AdaptadorProductoAleatorio(mContext, listaAleatoria)
+                binding.productosAleatRV.adapter = adaptadorProducto
             }
             override fun onCancelled(error: DatabaseError) {
                 TODO("Not yet implemented")
