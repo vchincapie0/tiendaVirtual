@@ -56,6 +56,8 @@ dependencies {
     implementation(libs.storage)
     implementation(libs.photoView)
     implementation(libs.circleImage)
+    implementation(libs.maps)
+    implementation(libs.places)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
