@@ -63,7 +63,4 @@ class FragmentMisProductosV : Fragment() {
         })
     }
 
-
-
-
 }

@@ -23,7 +23,7 @@
             <!-- Editar nombre de categoría -->
             <ImageButton
                 android:id="@+id/item_actualizar_cat"
-                android:src="@drawable/ic_edit_cat"
+                android:src="@drawable/ico_editar"
                 android:background="@android:color/transparent"
                 android:layout_width="40dp"
                 android:layout_height="40dp"/>
@@ -35,6 +35,7 @@
                 android:background="@android:color/transparent"
                 android:layout_width="40dp"
                 android:layout_height="40dp"/>
+
         </androidx.appcompat.widget.LinearLayoutCompat>
         <!-- Imagen de la categoría -->
         <ImageView
