@@ -3,13 +3,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cliente.RegistroClienteActivity">
+    tools:context=".Cliente.RegistroClienteActivity"
+    >
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="15dp">
+        android:padding="15dp"
+        android:layout_marginTop="?attr/actionBarSize">
 
         <TextView
             android:text="@string/txtRegistroC"

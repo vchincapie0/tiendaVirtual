@@ -9,7 +9,8 @@
     <RelativeLayout
         android:id="@+id/toolbarRL"
         android:layout_width="match_parent"
-        android:layout_height="55dp">
+        android:layout_height="55dp"
+        android:layout_marginTop="?attr/actionBarSize">
         <ImageButton
             android:id="@+id/Ib_regresar"
             android:src="@drawable/ico_regresar"
