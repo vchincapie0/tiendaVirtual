@@ -11,7 +11,7 @@
     <TextView
         android:textStyle="bold"
         android:textSize="18sp"
-        android:text="@string/txt_Bienvenida"
+        android:text="@string/txt_bienvenida"
         android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>

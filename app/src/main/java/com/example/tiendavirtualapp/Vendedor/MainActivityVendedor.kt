@@ -17,11 +17,9 @@ import com.example.tiendavirtualapp.R
 import com.example.tiendavirtualapp.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentMisProductosV
 import com.example.tiendavirtualapp.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentOrdenesV
 import com.example.tiendavirtualapp.Vendedor.Nav_Fragments_Vendedor.FragmentCategoriasV
-//import com.example.tiendavirtualapp.Vendedor.Nav_Fragments_Vendedor.FragmentCategoriasV//
 import com.example.tiendavirtualapp.Vendedor.Nav_Fragments_Vendedor.FragmentInicioV
 import com.example.tiendavirtualapp.Vendedor.Nav_Fragments_Vendedor.FragmentMiTiendaV
 import com.example.tiendavirtualapp.Vendedor.Nav_Fragments_Vendedor.FragmentReseniasV
-//import com.example.tiendavirtualapp.Vendedor.Nav_Fragments_Vendedor.FragmentProductosV
 import com.example.tiendavirtualapp.databinding.ActivityMainVendedorBinding
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth

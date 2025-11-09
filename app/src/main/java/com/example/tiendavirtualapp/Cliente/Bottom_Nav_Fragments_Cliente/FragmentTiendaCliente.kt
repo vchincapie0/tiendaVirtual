@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import com.example.tiendavirtualapp.R
 import com.example.tiendavirtualapp.Adaptadores.AdaptadorCategoriaC
 import com.example.tiendavirtualapp.Adaptadores.AdaptadorProductoAleatorio
-//import com.example.tiendavirtualapp.Adaptadores.AdaptadorProductoAleatorio
 import com.example.tiendavirtualapp.Modelos.ModeloCategoria
 import com.example.tiendavirtualapp.Modelos.ModeloProducto
 import com.example.tiendavirtualapp.databinding.FragmentTiendaClienteBinding

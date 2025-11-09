@@ -40,7 +40,7 @@ class DetalleProductoActivity : AppCompatActivity() {
             onBackPressedDispatcher.onBackPressed()
         }
 
-        binding.tvDejarCalificacion.setOnClickListener {
+        /*binding.tvDejarCalificacion.setOnClickListener {
             val intent = Intent(this , CalificarProductoActivity::class.java)
             intent.putExtra("idProducto", idProducto)
             startActivity(intent)
@@ -50,13 +50,13 @@ class DetalleProductoActivity : AppCompatActivity() {
             val intent = Intent(this , MostrarCalificacionesActivity::class.java)
             intent.putExtra("idProducto", idProducto)
             startActivity(intent)
-        }
+        }*/
 
-        calcularPromedioCal(idProducto)
+        /*calcularPromedioCal(idProducto)*/
 
     }
 
-    private fun calcularPromedioCal(idProducto: String) {
+    /*private fun calcularPromedioCal(idProducto: String) {
         val ref = FirebaseDatabase.getInstance().getReference("Productos/$idProducto/Calificaciones")
         ref.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -88,7 +88,7 @@ class DetalleProductoActivity : AppCompatActivity() {
             }
         })
 
-    }
+    }*/
 
     private fun cargarInfoProducto() {
         val ref = FirebaseDatabase.getInstance().getReference("Productos")
