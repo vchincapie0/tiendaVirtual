@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.example.tiendavirtualapp.Adaptadores.AdaptadorCarritoC
+import com.example.tiendavirtualapp.Cliente.Orden.DetalleOrdenCActivity
 import com.example.tiendavirtualapp.Constantes
 import com.example.tiendavirtualapp.Modelos.ModeloProductoCarrito
 import com.example.tiendavirtualapp.R
@@ -85,9 +86,9 @@ class FragmentCarritoC : Fragment() {
                     binding.sumaProductos.text = ""
                 }
                 Toast.makeText(mContext , "Orden realizada con éxito",Toast.LENGTH_SHORT).show()
-                /*val intent = Intent(mContext, DetalleOrdenCActivity::class.java)
+                val intent = Intent(mContext, DetalleOrdenCActivity::class.java)
                 intent.putExtra("idOrden", keyId)
-                startActivity(intent)*/
+                startActivity(intent)
             }
             .addOnFailureListener { e->
                 Toast.makeText(mContext , "${e.message}",Toast.LENGTH_SHORT).show()

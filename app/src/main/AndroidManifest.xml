@@ -25,6 +25,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TiendaVirtualApp">
         <activity
+            android:name=".Cliente.Orden.DetalleOrdenCActivity"
+            android:exported="false" />
+        <activity
             android:name=".Vendedor.Productos.ProductosCatVActivity"
             android:exported="false" />
         <activity
