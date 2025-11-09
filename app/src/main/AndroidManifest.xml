@@ -25,6 +25,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TiendaVirtualApp">
         <activity
+            android:name=".Vendedor.Productos.ProductosCatVActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Cliente.ActualizarPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".Cliente.RecuperarPasswordActivity"
             android:exported="false" />
         <activity

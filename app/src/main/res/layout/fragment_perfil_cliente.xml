@@ -120,6 +120,7 @@
                 android:textSize="18sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnGuardarInfoC"
                 android:text="@string/btnGuardarInfoC"
@@ -128,6 +129,7 @@
                 android:textAllCaps="true"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"/>
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnActualizarContraseña"
                 android:text="@string/btnActualizarContraseña"
@@ -137,6 +139,7 @@
                 android:layout_width="250dp"
                 android:visibility="gone"
                 android:layout_height="wrap_content"/>
+
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
