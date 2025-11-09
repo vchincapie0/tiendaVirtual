@@ -25,6 +25,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TiendaVirtualApp">
         <activity
+            android:name=".Cliente.RecuperarPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".Mapas.SeleccionarUbicacionActivity"
             android:exported="false" />
         <activity

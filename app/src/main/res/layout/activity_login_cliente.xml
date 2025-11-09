@@ -68,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         
-        
+        <!--TXT-->
         <TextView
             android:text="@string/txtNoCuenta"
             android:layout_gravity="end"
@@ -77,6 +77,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+        <!-- Registrar Cliente -->
         <TextView
             android:id="@+id/tvRegistrarC"
             android:text="@string/tvRegistrarC"
@@ -89,6 +90,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+        <!-- Recuperar contraseña -->
+        <TextView
+            android:id="@+id/tvRecuperarPass"
+            android:text="@string/tvRecuperarPass"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
         
     </androidx.appcompat.widget.LinearLayoutCompat>
 

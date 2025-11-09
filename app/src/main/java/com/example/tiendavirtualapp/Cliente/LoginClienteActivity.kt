@@ -38,6 +38,10 @@ class LoginClienteActivity : AppCompatActivity() {
             startActivity(Intent(this@LoginClienteActivity, RegistroClienteActivity::class.java))
         }
 
+        binding.tvRecuperarPass.setOnClickListener {
+            startActivity(Intent(this@LoginClienteActivity, RecuperarPasswordActivity::class.java))
+        }
+
 
 
     }
