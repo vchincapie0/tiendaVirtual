@@ -27,6 +27,10 @@ class ProductosCatVActivity : AppCompatActivity() {
 
         binding.txtProductoCat.text = "Categoria - ${nombreCat}"
 
+        binding.IbRegresar.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         listarProductos(nombreCat)
 
     }
