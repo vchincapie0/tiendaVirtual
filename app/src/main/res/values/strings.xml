@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Tienda Virtual</string>
 
-    <string name="mi_google_maps_api_key">AIzaSyCAvhEAZxeZLtFh2e9eF-Yg5p1rsZV7aMo</string>
+    <string name="mi_google_maps_api_key">aqui va la api key de google</string>
 
     <string name="open_drawer">Open drawer</string>
     <string name="close_drawer">Close drawer</string>
