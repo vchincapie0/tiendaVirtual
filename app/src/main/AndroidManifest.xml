@@ -25,6 +25,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TiendaVirtualApp">
         <activity
+            android:name=".Cliente.LoginTelActivity"
+            android:exported="false" />
+        <activity
             android:name=".Cliente.Orden.DetalleOrdenCActivity"
             android:exported="false" />
         <activity

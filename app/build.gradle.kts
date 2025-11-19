@@ -59,6 +59,7 @@ dependencies {
     implementation(libs.maps)
     implementation(libs.places)
     implementation(libs.authGoogle)
+    implementation(libs.ccp)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

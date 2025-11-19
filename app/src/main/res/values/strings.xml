@@ -105,6 +105,18 @@
     <string name="txtProductoCat">Producto-categoria</string>
     <string name="etBuscarProducto">Buscar producto</string>
 
+    <!-- Registro con número telefónico -->
+    <string name="txtLoginTelC">Login con teléfono</string>
+    <string name="txtLoginMensaje">Necesitamos que ingrese su número telefónico para continuar</string>
+    <string name="etTelefonoC">Teléfono</string>
+    <string name="btnEnviarCodigo">Enviar código OTP</string>
+    <string name="etCodVer">Código</string>
+    <string name="btnVerificarCod">Verificar código</string>
+    <string name="tvReenviarCod">
+    ¿No llegó el código?.
+    <b>Reenviar</b>
+    </string>
+
     <!-- Detalle del producto -->
     <string name="txtDetalleProducto">Detalle de la orden</string>
     <string name="tvPromCal">0.0/5</string>

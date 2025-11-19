@@ -55,9 +55,9 @@ class LoginClienteActivity : AppCompatActivity() {
             googleLogin()
         }
 
-        /*binding.btnLoginTel.setOnClickListener {
+        binding.btnLoginTel.setOnClickListener {
             startActivity(Intent(this, LoginTelActivity::class.java))
-        }*/
+        }
 
         binding.tvRegistrarC.setOnClickListener {
             startActivity(Intent(this@LoginClienteActivity, RegistroClienteActivity::class.java))

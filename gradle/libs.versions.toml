@@ -21,6 +21,7 @@ circleImageV = "3.1.0"
 mapsV="19.0.0"
 placeV="3.5.0"
 authGoogleV="21.4.0"
+ccpV="2.7.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -42,6 +43,7 @@ circleImage={group="de.hdodenhof", name = "circleimageview", version.ref="circle
 maps={group="com.google.android.gms", name = "play-services-maps", version.ref="mapsV"}
 places={group="com.google.android.libraries.places", name = "places", version.ref="placeV"}
 authGoogle={group="com.google.android.gms", name = "play-services-auth", version.ref="authGoogleV"}
+ccp={group="com.hbb20",name="ccp", version.ref="ccpV"}
 
 
 [plugins]
