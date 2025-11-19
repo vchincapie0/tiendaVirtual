@@ -35,13 +35,49 @@ class SplashScreenActivity : AppCompatActivity() {
             }
 
             override fun onFinish() {
-                startActivity(Intent(this@SplashScreenActivity, SeleccionarTipoActivity::class.java))
-                finish()
+                comprobarTipoUsuario()
             }
 
         }.start()
     }
 
+    private fun comprobarTipoUsuario() {
+        val firebaseUser = firebaseAuth.currentUser
+        if (firebaseUser == null) {
+            startActivity(Intent(this, SeleccionarTipoActivity::class.java))
+        } else {
+            val reference = FirebaseDatabase.getInstance().getReference("Usuarios")
+            reference.child(firebaseUser.uid)
+                .addListenerForSingleValueEvent(object : ValueEventListener {
+                    override fun onDataChange(snapshot: DataSnapshot) {
+                        val tipoU = snapshot.child("tipoUsuario").value
 
+                        if (tipoU == "vendedor") {
+                            startActivity(
+                                Intent(
+                                    this@SplashScreenActivity,
+                                    MainActivityVendedor::class.java
+                                )
+                            )
+                            finishAffinity()
+                        } else if (tipoU == "cliente") {
+                            startActivity(
+                                Intent(
+                                    this@SplashScreenActivity,
+                                    MainActivityCliente::class.java
+                                )
+                            )
+                            finishAffinity()
+                        }
+                    }
+
+                    override fun onCancelled(error: DatabaseError) {
+                        TODO("Not yet implemented")
+                    }
+                })
+        }
+
+    }
 
 }
+

@@ -58,6 +58,7 @@ dependencies {
     implementation(libs.circleImage)
     implementation(libs.maps)
     implementation(libs.places)
+    implementation(libs.authGoogle)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
