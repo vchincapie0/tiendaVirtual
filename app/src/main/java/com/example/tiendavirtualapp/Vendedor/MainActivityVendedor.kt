@@ -13,7 +13,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.example.tiendavirtualapp.R
-//import com.example.tiendavirtualapp.SeleccionarTipoActivity
+import com.example.tiendavirtualapp.SeleccionarTipoActivity
 import com.example.tiendavirtualapp.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentMisProductosV
 import com.example.tiendavirtualapp.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentOrdenesV
 import com.example.tiendavirtualapp.Vendedor.Nav_Fragments_Vendedor.FragmentCategoriasV
@@ -27,8 +27,11 @@ import com.google.firebase.auth.FirebaseAuth
 
 class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener {
 
-    private lateinit var binding: ActivityMainVendedorBinding
-    private var firebaseAuth: FirebaseAuth? = null
+    private lateinit var binding : ActivityMainVendedorBinding
+    private var firebaseAuth : FirebaseAuth?=null
+
+    private var dobleClick = false
+    private val handler = Handler(Looper.getMainLooper())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +45,22 @@ class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationIt
         comprobarSesion()
 
         binding.navigationView.setNavigationItemSelectedListener(this)
+
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true){
+            override fun handleOnBackPressed() {
+                if (dobleClick){
+                    /*Salimos de la app*/
+                    finish()
+                    return
+                }
+
+                dobleClick = true
+                Toast.makeText(this@MainActivityVendedor, "Presione nuevamente para salir",
+                    Toast.LENGTH_SHORT).show()
+
+                handler.postDelayed({dobleClick = false}, 2000)
+            }
+        })
 
         val toggle = ActionBarDrawerToggle(
             this,
@@ -61,20 +80,20 @@ class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationIt
 
     private fun cerrarSesion(){
         firebaseAuth!!.signOut()
-        startActivity(Intent(applicationContext, LoginVendedorActivity::class.java))
+        startActivity(Intent(applicationContext, SeleccionarTipoActivity::class.java))
         finish()
-        Toast.makeText(applicationContext, "Haz cerrado sesión", Toast.LENGTH_SHORT).show()
+        Toast.makeText(applicationContext, "Has cerrado sesión", Toast.LENGTH_SHORT).show()
     }
-    private fun comprobarSesion() {
-        /*Si el usuario no ha iniciado sesión */
-        if(firebaseAuth!!.currentUser==null){
-            startActivity(Intent(applicationContext, LoginVendedorActivity::class.java))
-            Toast.makeText(applicationContext, "Vendedor no registro o no logueado", Toast.LENGTH_SHORT).show()
-        }else{
-            Toast.makeText(applicationContext, "Vendedor en línea", Toast.LENGTH_SHORT).show()
 
+    private fun comprobarSesion(){
+        /*Si el usuario no ha iniciado sesión, que lo diriga a OpcionesLogin*/
+        if (firebaseAuth!!.currentUser==null){
+            startActivity(Intent(applicationContext, SeleccionarTipoActivity::class.java))
+        }else{
+            Toast.makeText(applicationContext,"Usuario en línea", Toast.LENGTH_SHORT).show()
         }
     }
+
     private fun replaceFragment(fragment: Fragment) {
         supportFragmentManager
             .beginTransaction()
@@ -83,19 +102,21 @@ class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationIt
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.op_inicio_v ->{ replaceFragment(FragmentInicioV())
-            } R.id.op_mi_tienda_v -> { replaceFragment(FragmentMiTiendaV())
-            } R.id.op_categorias_v -> { replaceFragment(FragmentCategoriasV())
-            } R.id.op_resenia_v -> { replaceFragment(FragmentReseniasV())
-            } R.id.op_cerrar_sesion_v -> {
+        when (item.itemId){
+            R.id.op_inicio_v->{
+                replaceFragment(FragmentInicioV())
+            }
+            R.id.op_mi_tienda_v->{
+                replaceFragment(FragmentMiTiendaV())
+            }
+            R.id.op_categorias_v->{
+                replaceFragment(FragmentCategoriasV())
+            }
+            R.id.op_cerrar_sesion_v->{
                 cerrarSesion()
-            } R.id.op_mis_productos -> { replaceFragment(FragmentMisProductosV())
-            } R.id.op_mis_ordenes -> {replaceFragment(FragmentOrdenesV())
             }
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
-
     }
 }
